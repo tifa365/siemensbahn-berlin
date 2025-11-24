@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_1de3d72eb78100dc7f2c337e5cb65361 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    
+                    <style>
+                        .foliumtooltip {
+                            
+                        }
+                       .foliumtooltip table{
+                            margin: auto;
+                        }
+                        .foliumtooltip tr{
+                            text-align: left;
+                        }
+                        .foliumtooltip th{
+                            padding: 2px; padding-right: 8px;
+                        }
+                    </style>
+            
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_1de3d72eb78100dc7f2c337e5cb65361" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_1de3d72eb78100dc7f2c337e5cb65361 = L.map(
+                "map_1de3d72eb78100dc7f2c337e5cb65361",
+                {
+                    center: [52.5379321, 13.2711845],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f7d30df97c6c8623d2e939eac67711ad = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_f7d30df97c6c8623d2e939eac67711ad.addTo(map_1de3d72eb78100dc7f2c337e5cb65361);
+        
+    
+        function geo_json_cf6fb89d67b83a55d5548e381a116353_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#0066cc", "opacity": 0.8, "weight": 4};
+            }
+        }
+
+        function geo_json_cf6fb89d67b83a55d5548e381a116353_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_cf6fb89d67b83a55d5548e381a116353 = L.geoJson(null, {
+                onEachFeature: geo_json_cf6fb89d67b83a55d5548e381a116353_onEachFeature,
+            
+                style: geo_json_cf6fb89d67b83a55d5548e381a116353_styler,
+            ...{
+}
+        });
+
+        function geo_json_cf6fb89d67b83a55d5548e381a116353_add (data) {
+            geo_json_cf6fb89d67b83a55d5548e381a116353
+                .addData(data);
+        }
+            geo_json_cf6fb89d67b83a55d5548e381a116353_add({"bbox": [13.2486591, 52.5288141, 13.2937099, 52.5470501], "features": [{"bbox": [13.2704077, 52.5387052, 13.2722409, 52.5387896], "geometry": {"coordinates": [[13.2704077, 52.5387896], [13.2713076, 52.5387725], [13.2715398, 52.538765], [13.271779, 52.5387519], [13.2719913, 52.5387339], [13.2722409, 52.5387052]], "type": "LineString"}, "id": "0", "properties": {"name": "Siemensbahn", "osm_id": 4588806}, "type": "Feature"}, {"bbox": [13.27, 52.5387896, 13.2704077, 52.5387989], "geometry": {"coordinates": [[13.27, 52.5387989], [13.2704077, 52.5387896]], "type": "LineString"}, "id": "1", "properties": {"name": "Siemensbahn", "osm_id": 8039913}, "type": "Feature"}, {"bbox": [13.275335, 52.5352145, 13.2760546, 52.5372393], "geometry": {"coordinates": [[13.275335, 52.5372393], [13.2755284, 52.536986], [13.2756193, 52.5368608], [13.2757055, 52.5367329], [13.2759173, 52.5363136], [13.2760171, 52.5360214], [13.2760546, 52.5357341], [13.2760354, 52.5352145]], "type": "LineString"}, "id": "2", "properties": {"name": "Siemensbahn", "osm_id": 8039916}, "type": "Feature"}, {"bbox": [13.2759329, 52.5338688, 13.2760354, 52.5352145], "geometry": {"coordinates": [[13.2760354, 52.5352145], [13.2759542, 52.5343082], [13.2759388, 52.5340481], [13.2759329, 52.5338688]], "type": "LineString"}, "id": "3", "properties": {"name": "Siemensbahn", "osm_id": 8039917}, "type": "Feature"}, {"bbox": [13.272478, 52.5377013, 13.2748602, 52.5386715], "geometry": {"coordinates": [[13.272478, 52.5386715], [13.2727359, 52.5386252], [13.2730214, 52.5385644], [13.2732163, 52.5385132], [13.2733962, 52.5384605], [13.273606, 52.5383902], [13.2738068, 52.5383122], [13.2740784, 52.5381935], [13.2742596, 52.5381009], [13.2744332, 52.5380003], [13.2746007, 52.5378929], [13.2747273, 52.537804], [13.2748602, 52.5377013]], "type": "LineString"}, "id": "4", "properties": {"name": "Siemensbahn", "osm_id": 24485467}, "type": "Feature"}, {"bbox": [13.2722409, 52.5386715, 13.272478, 52.5387052], "geometry": {"coordinates": [[13.2722409, 52.5387052], [13.2723633, 52.5386883], [13.272478, 52.5386715]], "type": "LineString"}, "id": "5", "properties": {"name": "Siemensbahn", "osm_id": 24485468}, "type": "Feature"}, {"bbox": [13.2671343, 52.5388562, 13.2673754, 52.5388626], "geometry": {"coordinates": [[13.2671343, 52.5388626], [13.2673754, 52.5388562]], "type": "LineString"}, "id": "6", "properties": {"name": "Siemensbahn", "osm_id": 24485492}, "type": "Feature"}, {"bbox": [13.264379, 52.5388626, 13.2671343, 52.5389904], "geometry": {"coordinates": [[13.264379, 52.5389904], [13.2648219, 52.5389358], [13.2651455, 52.5389103], [13.2660957, 52.5388821], [13.2671343, 52.5388626]], "type": "LineString"}, "id": "7", "properties": {"name": "Siemensbahn", "osm_id": 24485512}, "type": "Feature"}, {"bbox": [13.2673754, 52.5387989, 13.27, 52.5388562], "geometry": {"coordinates": [[13.2673754, 52.5388562], [13.27, 52.5387989]], "type": "LineString"}, "id": "8", "properties": {"name": "Siemensbahn", "osm_id": 28261382}, "type": "Feature"}, {"bbox": [13.2629269, 52.5389904, 13.264379, 52.5393968], "geometry": {"coordinates": [[13.2629269, 52.5393968], [13.2632604, 52.5392739], [13.2635701, 52.5391715], [13.2639796, 52.5390709], [13.264379, 52.5389904]], "type": "LineString"}, "id": "9", "properties": {"name": "Siemensbahn", "osm_id": 28261385}, "type": "Feature"}, {"bbox": [13.2800254, 52.5288609, 13.2826828, 52.5297054], "geometry": {"coordinates": [[13.2800254, 52.5297054], [13.2802463, 52.5295621], [13.2804639, 52.5294482], [13.2806776, 52.5293468], [13.2808776, 52.5292588], [13.2810589, 52.529192], [13.2813482, 52.5291026], [13.2816946, 52.52901], [13.2821801, 52.5289162], [13.2826828, 52.5288609]], "type": "LineString"}, "id": "10", "properties": {"name": "Siemensbahn", "osm_id": 28545057}, "type": "Feature"}, {"bbox": [13.2748602, 52.5376766, 13.2748935, 52.5377013], "geometry": {"coordinates": [[13.2748602, 52.5377013], [13.2748935, 52.5376766]], "type": "LineString"}, "id": "11", "properties": {"name": "Siemensbahn", "osm_id": 42714234}, "type": "Feature"}, {"bbox": [13.2748935, 52.5372393, 13.275335, 52.5376766], "geometry": {"coordinates": [[13.2748935, 52.5376766], [13.2750036, 52.5375838], [13.2751138, 52.5374854], [13.2752246, 52.5373699], [13.275335, 52.5372393]], "type": "LineString"}, "id": "12", "properties": {"name": "Siemensbahn", "osm_id": 42714235}, "type": "Feature"}, {"bbox": [13.2486591, 52.5463547, 13.2499214, 52.5470501], "geometry": {"coordinates": [[13.2498205, 52.5463547], [13.2486738, 52.5469724], [13.2486591, 52.5469804], [13.248761, 52.5470501], [13.2499214, 52.5464225], [13.2498205, 52.5463547]], "type": "LineString"}, "id": "13", "properties": {"name": "S Gartenfeld", "osm_id": 44466542}, "type": "Feature"}, {"bbox": [13.2629429, 52.5390088, 13.2644305, 52.5394805], "geometry": {"coordinates": [[13.2630081, 52.5394805], [13.2633442, 52.5393743], [13.2637056, 52.5392672], [13.2640441, 52.5391859], [13.2644305, 52.5391009], [13.2643757, 52.5390088], [13.2639687, 52.5390922], [13.263609, 52.5391826], [13.2632631, 52.5392919], [13.2629429, 52.5394128], [13.2630081, 52.5394805]], "type": "LineString"}, "id": "14", "properties": {"name": "S-Bf. Siemensstadt", "osm_id": 44466544}, "type": "Feature"}, {"bbox": [13.2759329, 52.5307678, 13.2786542, 52.5338688], "geometry": {"coordinates": [[13.2759329, 52.5338688], [13.2759897, 52.5335641], [13.2760598, 52.5333518], [13.2761501, 52.5331568], [13.2762518, 52.5329843], [13.2764606, 52.5327132], [13.2766538, 52.5325045], [13.2768693, 52.5323117], [13.277094, 52.5321094], [13.2778815, 52.5314397], [13.2786542, 52.5307678]], "type": "LineString"}, "id": "15", "properties": {"name": "Siemensbahn", "osm_id": 44466545}, "type": "Feature"}, {"bbox": [13.2759534, 52.5340438, 13.2761748, 52.5352117], "geometry": {"coordinates": [[13.2761748, 52.5351924], [13.2761136, 52.5345743], [13.2760882, 52.5340438], [13.2759534, 52.5340488], [13.2759771, 52.5343079], [13.2759668, 52.5345795], [13.2760574, 52.5352117], [13.2761748, 52.5351924]], "type": "LineString"}, "id": "16", "properties": {"name": "S-Bf. Wernerwerk", "osm_id": 44466546}, "type": "Feature"}, {"bbox": [13.2545727, 52.5414904, 13.2590592, 52.5440618], "geometry": {"coordinates": [[13.2590592, 52.5414904], [13.2589604, 52.5415378], [13.2585039, 52.5417889], [13.257135, 52.5426445], [13.2545727, 52.5440618]], "type": "LineString"}, "id": "17", "properties": {"name": "Siemensbahn", "osm_id": 97020576}, "type": "Feature"}, {"bbox": [13.27249, 52.5377198, 13.2749041, 52.5387062], "geometry": {"coordinates": [[13.2749041, 52.5377198], [13.2747723, 52.5378211], [13.2746426, 52.5379134], [13.2744403, 52.5380423], [13.2742719, 52.5381363], [13.2741076, 52.53822], [13.2739727, 52.5382817], [13.2738458, 52.538335], [13.273641, 52.5384168], [13.2734182, 52.5384929], [13.2732237, 52.538548], [13.2730268, 52.5385994], [13.2727399, 52.5386608], [13.27249, 52.5387062]], "type": "LineString"}, "id": "18", "properties": {"name": "Siemensbahn", "osm_id": 97020579}, "type": "Feature"}, {"bbox": [13.2671365, 52.5388905, 13.2673777, 52.5388956], "geometry": {"coordinates": [[13.2673777, 52.5388905], [13.2671365, 52.5388956]], "type": "LineString"}, "id": "19", "properties": {"name": "Siemensbahn", "osm_id": 97020580}, "type": "Feature"}, {"bbox": [13.2700546, 52.5388227, 13.2704351, 52.5388294], "geometry": {"coordinates": [[13.2704351, 52.5388227], [13.2700546, 52.5388294]], "type": "LineString"}, "id": "20", "properties": {"name": "Siemensbahn", "osm_id": 97020588}, "type": "Feature"}, {"bbox": [13.2592026, 52.5395005, 13.2630276, 52.5414129], "geometry": {"coordinates": [[13.2630276, 52.5395005], [13.2627415, 52.5396011], [13.2621369, 52.5398579], [13.2616812, 52.5400886], [13.2592026, 52.5414129]], "type": "LineString"}, "id": "21", "properties": {"name": "Siemensbahn", "osm_id": 97020589}, "type": "Feature"}, {"bbox": [13.2630276, 52.5391224, 13.264437, 52.5395005], "geometry": {"coordinates": [[13.264437, 52.5391224], [13.2640611, 52.5392044], [13.2636607, 52.5393071], [13.2633557, 52.5393915], [13.2630276, 52.5395005]], "type": "LineString"}, "id": "22", "properties": {"name": "Siemensbahn", "osm_id": 97020595}, "type": "Feature"}, {"bbox": [13.2753997, 52.5307908, 13.2786941, 52.5372409], "geometry": {"coordinates": [[13.2786941, 52.5307908], [13.2779277, 52.5314532], [13.2771325, 52.532133], [13.2769076, 52.5323313], [13.2767127, 52.5325273], [13.2765336, 52.532738], [13.2763432, 52.5330187], [13.2762024, 52.533329], [13.2761404, 52.5336035], [13.2761149, 52.5338708], [13.2761195, 52.534045], [13.2761364, 52.5342711], [13.2762123, 52.5351797], [13.2762105, 52.535418], [13.2761834, 52.5357022], [13.2760922, 52.5360341], [13.2759777, 52.5363241], [13.275765, 52.5367445], [13.2756821, 52.5368692], [13.2755938, 52.5369938], [13.2753997, 52.5372409]], "type": "LineString"}, "id": "23", "properties": {"name": "Siemensbahn", "osm_id": 97020597}, "type": "Feature"}, {"bbox": [13.272253, 52.5387062, 13.27249, 52.53874], "geometry": {"coordinates": [[13.27249, 52.5387062], [13.272253, 52.53874]], "type": "LineString"}, "id": "24", "properties": {"name": "Siemensbahn", "osm_id": 97020600}, "type": "Feature"}, {"bbox": [13.264437, 52.5388956, 13.2671365, 52.5391224], "geometry": {"coordinates": [[13.2671365, 52.5388956], [13.2660929, 52.5389244], [13.2656204, 52.5389592], [13.2651615, 52.5390072], [13.2648591, 52.5390503], [13.264437, 52.5391224]], "type": "LineString"}, "id": "25", "properties": {"name": "Siemensbahn", "osm_id": 97020602}, "type": "Feature"}, {"bbox": [13.2673777, 52.5388294, 13.2700546, 52.5388905], "geometry": {"coordinates": [[13.2700546, 52.5388294], [13.2673777, 52.5388905]], "type": "LineString"}, "id": "26", "properties": {"name": "Siemensbahn", "osm_id": 97020605}, "type": "Feature"}, {"bbox": [13.2590592, 52.5414129, 13.2592026, 52.5414904], "geometry": {"coordinates": [[13.2592026, 52.5414129], [13.2590592, 52.5414904]], "type": "LineString"}, "id": "27", "properties": {"name": "Siemensbahn", "osm_id": 97020609}, "type": "Feature"}, {"bbox": [13.2749041, 52.5376932, 13.2749358, 52.5377198], "geometry": {"coordinates": [[13.2749358, 52.5376932], [13.2749041, 52.5377198]], "type": "LineString"}, "id": "28", "properties": {"name": "Siemensbahn", "osm_id": 97020610}, "type": "Feature"}, {"bbox": [13.2704351, 52.53874, 13.272253, 52.5388227], "geometry": {"coordinates": [[13.272253, 52.53874], [13.2721013, 52.5387584], [13.2719752, 52.5387699], [13.2717193, 52.53879], [13.2713265, 52.5388036], [13.2704351, 52.5388227]], "type": "LineString"}, "id": "29", "properties": {"name": "Siemensbahn", "osm_id": 97020613}, "type": "Feature"}, {"bbox": [13.2749358, 52.5372409, 13.2753997, 52.5376932], "geometry": {"coordinates": [[13.2753997, 52.5372409], [13.2752522, 52.5374056], [13.2751245, 52.5375276], [13.2750316, 52.5376134], [13.2749358, 52.5376932]], "type": "LineString"}, "id": "30", "properties": {"name": "Siemensbahn", "osm_id": 97020615}, "type": "Feature"}, {"bbox": [13.2799872, 52.5288141, 13.2849214, 52.5296863], "geometry": {"coordinates": [[13.2799872, 52.5296863], [13.2802009, 52.5295426], [13.2804325, 52.5294166], [13.2806497, 52.5293145], [13.2808439, 52.5292337], [13.2810239, 52.5291677], [13.2813095, 52.5290791], [13.2816764, 52.5289801], [13.282154, 52.528889], [13.2826627, 52.5288272], [13.2830232, 52.5288141], [13.2833605, 52.5288198], [13.2837555, 52.5288328], [13.2844465, 52.5288669], [13.2849214, 52.528893]], "type": "LineString"}, "id": "31", "properties": {"name": "Siemensbahn", "osm_id": 283881316}, "type": "Feature"}, {"bbox": [13.2792775, 52.5297054, 13.2800254, 52.530281], "geometry": {"coordinates": [[13.2792775, 52.530281], [13.2794194, 52.530165], [13.2800254, 52.5297054]], "type": "LineString"}, "id": "32", "properties": {"name": "Siemensbahn", "osm_id": 283881317}, "type": "Feature"}, {"bbox": [13.2792308, 52.5296863, 13.2799872, 52.5302648], "geometry": {"coordinates": [[13.2792308, 52.5302648], [13.2793723, 52.5301558], [13.2799872, 52.5296863]], "type": "LineString"}, "id": "33", "properties": {"name": "Siemensbahn", "osm_id": 283881319}, "type": "Feature"}, {"bbox": [13.2590223, 52.5393968, 13.2629269, 52.5413708], "geometry": {"coordinates": [[13.2629269, 52.5393968], [13.2625968, 52.5395481], [13.261612, 52.5400791], [13.2605857, 52.5406182], [13.2590223, 52.5413708]], "type": "LineString"}, "id": "34", "properties": {"name": "Siemensbahn", "osm_id": 317008963}, "type": "Feature"}, {"bbox": [13.2851555, 52.5289424, 13.2937099, 52.5295868], "geometry": {"coordinates": [[13.2937099, 52.5295868], [13.292136, 52.5295084], [13.2917109, 52.5294905], [13.2912849, 52.52948], [13.2892104, 52.529461], [13.2885507, 52.5294544], [13.2881731, 52.5294366], [13.2878005, 52.5294101], [13.2873657, 52.5293534], [13.2869331, 52.5292805], [13.2865369, 52.5291837], [13.2861467, 52.529087], [13.2856491, 52.5290075], [13.2851555, 52.5289424]], "type": "LineString"}, "id": "35", "properties": {"name": "Siemensbahn", "osm_id": 703053288}, "type": "Feature"}, {"bbox": [13.2545148, 52.5440618, 13.2545727, 52.5440915], "geometry": {"coordinates": [[13.2545727, 52.5440618], [13.2545148, 52.5440915]], "type": "LineString"}, "id": "36", "properties": {"name": "Siemensbahn", "osm_id": 707056910}, "type": "Feature"}, {"bbox": [13.2488597, 52.5440915, 13.2545148, 52.5470208], "geometry": {"coordinates": [[13.2545148, 52.5440915], [13.2534958, 52.5446299], [13.2523734, 52.5451183], [13.2518266, 52.54541], [13.2510324, 52.5458429], [13.2503069, 52.5462374], [13.2488597, 52.5470208]], "type": "LineString"}, "id": "37", "properties": {"name": "Siemensbahn", "osm_id": 707056911}, "type": "Feature"}, {"bbox": [13.2826828, 52.5288451, 13.2849138, 52.5289221], "geometry": {"coordinates": [[13.2849138, 52.5289221], [13.2844413, 52.5288987], [13.2837517, 52.5288622], [13.2833643, 52.528848], [13.2830232, 52.5288451], [13.2826828, 52.5288609]], "type": "LineString"}, "id": "38", "properties": {"name": "Siemensbahn", "osm_id": 707063353}, "type": "Feature"}, {"bbox": [13.2849138, 52.5289221, 13.2851555, 52.5289424], "geometry": {"coordinates": [[13.2851555, 52.5289424], [13.2849138, 52.5289221]], "type": "LineString"}, "id": "39", "properties": {"name": "Siemensbahn", "osm_id": 707063354}, "type": "Feature"}, {"bbox": [13.2849214, 52.528893, 13.285161, 52.5289124], "geometry": {"coordinates": [[13.2849214, 52.528893], [13.285161, 52.5289124]], "type": "LineString"}, "id": "40", "properties": {"name": "Siemensbahn", "osm_id": 707063355}, "type": "Feature"}, {"bbox": [13.285161, 52.5289124, 13.2927134, 52.5295076], "geometry": {"coordinates": [[13.285161, 52.5289124], [13.2856645, 52.5289773], [13.2861685, 52.5290578], [13.2865589, 52.5291527], [13.2869554, 52.5292522], [13.2873791, 52.5293224], [13.2878137, 52.5293779], [13.288186, 52.529404], [13.2885486, 52.5294236], [13.2892084, 52.5294285], [13.29128, 52.5294511], [13.2917136, 52.5294619], [13.2921401, 52.5294801], [13.2927134, 52.5295076]], "type": "LineString"}, "id": "41", "properties": {"name": "Siemensbahn", "osm_id": 707063356}, "type": "Feature"}, {"bbox": [13.2786941, 52.530281, 13.2792775, 52.5307908], "geometry": {"coordinates": [[13.2792775, 52.530281], [13.2786941, 52.5307908]], "type": "LineString"}, "id": "42", "properties": {"name": "Siemensbahn", "osm_id": 883834101}, "type": "Feature"}, {"bbox": [13.2786542, 52.5302648, 13.2792308, 52.5307678], "geometry": {"coordinates": [[13.2786542, 52.5307678], [13.2792308, 52.5302648]], "type": "LineString"}, "id": "43", "properties": {"name": "Siemensbahn", "osm_id": 883834102}, "type": "Feature"}, {"bbox": [13.2487138, 52.5414526, 13.2588571, 52.5469222], "geometry": {"coordinates": [[13.2487138, 52.5469222], [13.250726, 52.5458263], [13.2523463, 52.5449544], [13.2525058, 52.5448489], [13.252676, 52.5447431], [13.252908, 52.5445782], [13.2531399, 52.5444326], [13.2544043, 52.5437467], [13.2552833, 52.5432712], [13.2563289, 52.5426945], [13.2567273, 52.5424863], [13.2575259, 52.542095], [13.2587143, 52.5415189], [13.2588571, 52.5414526]], "type": "LineString"}, "id": "44", "properties": {"name": "Siemensbahn", "osm_id": 883834137}, "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+    geo_json_cf6fb89d67b83a55d5548e381a116353.bindTooltip(
+    function(layer){
+    let div = L.DomUtil.create('div');
+    
+    let handleObject = feature => {
+        if (feature === null) {
+            return '';
+        } else if (typeof(feature)=='object') {
+            return JSON.stringify(feature);
+        } else {
+            return feature;
+        }
+    }
+    let fields = ["name", "osm_id"];
+    let aliases = ["Name:", "OSM ID:"];
+    let table = '<table>' +
+        String(
+        fields.map(
+        (v,i)=>
+        `<tr>
+            <th>${aliases[i]}</th>
+            
+            <td>${handleObject(layer.feature.properties[v])}</td>
+        </tr>`).join(''))
+    +'</table>';
+    div.innerHTML=table;
+    
+    return div
+    }
+    ,{
+  "sticky": true,
+  "className": "foliumtooltip",
+});
+                     
+    
+            geo_json_cf6fb89d67b83a55d5548e381a116353.addTo(map_1de3d72eb78100dc7f2c337e5cb65361);
+        
+    
+            var layer_control_c0b7e8575b920b4d1e2f7a149efd515d_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_f7d30df97c6c8623d2e939eac67711ad,
+                },
+                overlays :  {
+                    "Siemensbahn" : geo_json_cf6fb89d67b83a55d5548e381a116353,
+                },
+            };
+            let layer_control_c0b7e8575b920b4d1e2f7a149efd515d = L.control.layers(
+                layer_control_c0b7e8575b920b4d1e2f7a149efd515d_layers.base_layers,
+                layer_control_c0b7e8575b920b4d1e2f7a149efd515d_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_1de3d72eb78100dc7f2c337e5cb65361);
+
+        
+</script>
+</html>

@@ -1,0 +1,11 @@
+[project]
+name = "siemensbahn"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "folium>=0.20.0",
+    "geopandas>=1.1.1",
+    "osmnx>=2.0.6",
+]
